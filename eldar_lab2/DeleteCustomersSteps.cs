@@ -36,7 +36,7 @@ namespace eldar_lab2
         [Then(@"there should be no customers left")]
         public void ThenThereShouldBeNoCustomersLeft()
         {
-            Assert.That(mainPage.CheckNumberOfDeleteButtons(), Is.EqualTo(1));
+            Assert.That(mainPage.CheckNumberOfDeleteButtons(), Is.EqualTo(0));
         }
 
         [AfterScenario]
